@@ -1,5 +1,4 @@
 <?php
-<?php
 define("DB_SERVER", "mysql.railway.internal");
 define("DB_PORT", 3306);
 define("DB_USERNAME", "root");
@@ -15,7 +14,6 @@ if ($connect) {
 } else {
     echo "❌ متصل نشد. خطا: " . mysqli_connect_error();
 }
-?>
 
 
 mysqli_query($connect, "CREATE TABLE IF NOT EXISTS user_id (
