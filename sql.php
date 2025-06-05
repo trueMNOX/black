@@ -3,7 +3,7 @@
 define("DB_SERVER", "mysql.railway.internal");
 define("DB_PORT", 3306);
 define("DB_USERNAME", "root");
-define("DB_PASSWORD", "MKtySBnRwvZvnIqhsFKlFjwKuyQjRqVz");
+define("DB_PASSWORD", "xPzYgTAUjYlZlrtFiistZeDVyUqurEQg");
 define("DB_NAME", "railway");
 
 $connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT);
