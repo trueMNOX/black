@@ -1,12 +1,12 @@
 <?php
-define("DB_SERVER", "metro.proxy.rlwy.net");
-define("DB_PORT", 3306); // پورت رو هم باید اضافه کنی
+define("DB_SERVER", "mysql.railway.internal");
+define("DB_PORT", 3306);
 define("DB_USERNAME", "root");
 define("DB_PASSWORD", "MKtySBnRwvZvnIqhsFKlFjwKuyQjRqVz");
 define("DB_NAME", "railway");
 
-
 $connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT);
+
 mysqli_set_charset($connect, "utf8mb4");
 
 if ($connect) {
@@ -14,6 +14,7 @@ if ($connect) {
 } else {
     echo "متصل نشد. خطا: " . mysqli_connect_error();
 }
+
 
 
 mysqli_query($connect, "CREATE TABLE IF NOT EXISTS user_id (
