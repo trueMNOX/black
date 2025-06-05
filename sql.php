@@ -1,16 +1,20 @@
 <?php
-define("DB_SERVER", "mysql://root:MKtySBnRwvZvnIqhsFKlFjwKuyQjRqVz@metro.proxy.rlwy.net:24110/railway"); # دست نزنید
-define("DB_USERNAME", "root"); # اطلاعات گذاری شود
-define("DB_PASSWORD", "MKtySBnRwvZvnIqhsFKlFjwKuyQjRqVz"); # اطلاعات گذاری شود
-define("DB_NAME", "railway"); # اطلاعات گذاری شود
+define("DB_SERVER", "metro.proxy.rlwy.net");
+define("DB_PORT", 8080); // پورت رو هم باید اضافه کنی
+define("DB_USERNAME", "root");
+define("DB_PASSWORD", "MKtySBnRwvZvnIqhsFKlFjwKuyQjRqVz");
+define("DB_NAME", "railway");
 
-$connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+$connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT);
 mysqli_set_charset($connect, "utf8mb4");
+
 if ($connect) {
     echo "متصل شد.";
 } else {
-    echo "متصل نشد.";
+    echo "متصل نشد. خطا: " . mysqli_connect_error();
 }
+
 
 mysqli_query($connect, "CREATE TABLE IF NOT EXISTS user_id (
     `id` int(20) AUTO_INCREMENT PRIMARY KEY,
