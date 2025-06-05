@@ -1,8 +1,8 @@
 <?php
 define("DB_SERVER", "localhost"); # دست نزنید
-define("DB_USERNAME", "------"); # اطلاعات گذاری شود 
-define("DB_PASSWORD", "------"); # اطلاعات گذاری شود
-define("DB_NAME", "-----"); # اطلاعات گذاری شود
+define("DB_USERNAME", "root"); # اطلاعات گذاری شود
+define("DB_PASSWORD", "MKtySBnRwvZvnIqhsFKlFjwKuyQjRqVz"); # اطلاعات گذاری شود
+define("DB_NAME", "railway"); # اطلاعات گذاری شود
 
 $connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 mysqli_set_charset($connect, "utf8mb4");
