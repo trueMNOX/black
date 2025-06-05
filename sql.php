@@ -1,5 +1,5 @@
 <?php
-define("DB_SERVER", "localhost"); # دست نزنید
+define("DB_SERVER", "mysql://root:MKtySBnRwvZvnIqhsFKlFjwKuyQjRqVz@metro.proxy.rlwy.net:24110/railway"); # دست نزنید
 define("DB_USERNAME", "root"); # اطلاعات گذاری شود
 define("DB_PASSWORD", "MKtySBnRwvZvnIqhsFKlFjwKuyQjRqVz"); # اطلاعات گذاری شود
 define("DB_NAME", "railway"); # اطلاعات گذاری شود
