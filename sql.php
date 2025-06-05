@@ -1,6 +1,6 @@
 <?php
 define("DB_SERVER", "metro.proxy.rlwy.net");
-define("DB_PORT", 8080); // پورت رو هم باید اضافه کنی
+define("DB_PORT", 3306); // پورت رو هم باید اضافه کنی
 define("DB_USERNAME", "root");
 define("DB_PASSWORD", "MKtySBnRwvZvnIqhsFKlFjwKuyQjRqVz");
 define("DB_NAME", "railway");
